@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.touch-punch.min.js
 //= require_tree .
 
 
