@@ -206,10 +206,6 @@ margin-top:0px;*/
 	top:380px;
 }
 
-
-
-
-
 #content #PrizesInfo {
 	position:absolute;
 	left:680px;
@@ -292,8 +288,6 @@ margin-top:0px;*/
   position: absolute;
   left: 580px;
   top: 250px;
-  width: 0;
-  height: 0;
   z-index: 100;
   color:#FFF;
   background: #01AEF0;
