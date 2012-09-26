@@ -206,6 +206,10 @@ margin-top:0px;*/
 	top:380px;
 }
 
+
+
+
+
 #content #PrizesInfo {
 	position:absolute;
 	left:680px;
@@ -214,7 +218,7 @@ margin-top:0px;*/
 	height:150px;
 	/*border:1px solid black;*/
 	text-align:left;
-	/*display:none;*/
+	display:none;
 }
 
 #content #TaxesInfo {
@@ -225,7 +229,7 @@ margin-top:0px;*/
 	height:50px;
 	/*border:1px solid black;*/
 	text-align:left;
-	/*display:none;*/
+	display:none;
 }
 
 #content #RetailersInfo {
@@ -236,7 +240,7 @@ margin-top:0px;*/
 	height:50px;
 	/*border:1px solid black;*/
 	text-align:left;
-	/*display:none;*/
+	display:none;
 }
 
 #content #ProvincesInfo {
@@ -247,7 +251,7 @@ margin-top:0px;*/
 	height:100px;
 	/*border:1px solid black;*/
 	text-align:left;
-	/*display:none;*/
+	display:none;
 }
 
 #content #ExpensesInfo {
@@ -258,7 +262,7 @@ margin-top:0px;*/
 	height:50px;
 	/*border:1px solid black;*/
 	text-align:left;
-	/*display:none;*/
+	display:none;
 }
 
 #content #SalariesInfo {
@@ -269,7 +273,7 @@ margin-top:0px;*/
 	height:50px;
 	/*border:1px solid black;*/
 	text-align:left;
-	/*display:none;*/
+	display:none;
 }
 
 
@@ -288,6 +292,8 @@ margin-top:0px;*/
   position: absolute;
   left: 580px;
   top: 250px;
+  width: 0;
+  height: 0;
   z-index: 100;
   color:#FFF;
   background: #01AEF0;
