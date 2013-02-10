@@ -21,7 +21,7 @@
  body { background-color: #fff; color: #666; text-align: center; font-family: breeserif;  line-height: 1em;}
  div.canvas {
    width: 800px;
-   height: 750px;
+   height: 900px;
    background-image: url('WhereTheMoneyGoesBG2.gif'); 
    background-repeat:no-repeat;
    background-position:top center;
