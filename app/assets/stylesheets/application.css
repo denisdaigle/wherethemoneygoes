@@ -13,13 +13,18 @@
  */
 
 
- body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
+ @font-face {
+  font-family: "breeserif";
+  src: url(BreeSerif-Regular.otf);
+  }
+
+ body { background-color: #fff; color: #666; text-align: center; font-family: breeserif;  line-height: 1em;}
  div.canvas {
    width: 800px;
-   height: 650px;
-   background-image: url('WhereTheMoneyGoesBG2.jpg'); 
+   height: 750px;
+   background-image: url('WhereTheMoneyGoesBG2.gif'); 
    background-repeat:no-repeat;
-   background-position:center;
+   background-position:top center;
    padding: 0 4em;
    margin: 0em auto 0 auto;
    border: 1px solid #FFF;
@@ -27,6 +32,7 @@
    border-bottom-color: #FFF;
  }
  h1 { color: #f00; line-height: 1.5em; }
+ p { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif;}
 
 
 /* Add some margin to the page and set a default font and colour */
@@ -78,15 +84,16 @@ h1, h2, h3, h4 {
 
 #cardPile {
   /*margin: 0 auto;*/
-  float:left;
-  margin-top:40px;
+  float:none;
+  margin-top:230px;
+  margin-left:25px;
   /*background: #ffd;*/
   border: 2px dashed #AAA;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  width: 120px;
-  height: 450px;
+  width: 750px;
+  height: 50px;
   /*border: 5px solid red;*/
   /*border: 2px solid #333;
   -moz-border-radius: 10px;
@@ -101,22 +108,25 @@ h1, h2, h3, h4 {
 
 #cardPile div {
   float: left;
-  width: 80px;
-  height: 40px;
-  padding:10px;
+  width: 90px;
+  height: 20px;
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:10px;
   border: 2px solid #FFF;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
   margin-left:10px;
-  margin-top:10px;
+  margin-top:3px;
   margin-right:0px;
   margin-bottom:0px;
   /*background: #01AEF0;*/
   background: #0099cc;
   color: #fff;
   font-size: 20px;
-  text-shadow: 0 0 3px #000;
+  text-shadow: 0 0 1px #000;
 }
 
 #cardPile div.ui-draggable-dragging {
@@ -127,11 +137,11 @@ h1, h2, h3, h4 {
 
 #cardSlots {
   position:relative;	
-  width: 610px;
-  height: 520px;
-  /*border:5px solid gold;*/
-  margin-left:200px;
-  margin-top:100px;
+  width: 775px;
+  height: 450px;
+  /*border:1px solid gold;*/
+  margin-left:10px;
+  margin-top:5px;
   /*border: 2px solid #333;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -148,8 +158,8 @@ margin-top:0px;*/
 
 #cardSlots div {
   /*float: left;*/
-  width: 80px;
-  height: 40px;
+  width: 90px;
+  height: 20px;
   padding-right: 10px;
   padding-left:10px;
   padding-top: 10px;
@@ -173,37 +183,37 @@ margin-top:0px;*/
 
 #cardSlots #aPrizes {
 	position:absolute;
-	left:470px;
-	top:70px;
+	left:560px;
+	top:40px;
 }
 
 #cardSlots #aTaxes {
 	position:absolute;
-	left:330px;
-	top:375px;
+	left:400px;
+	top:380px;
 }
 
 #cardSlots #aRetailers {
 	position:absolute;
-	left:50px;
-	top:280px;
+	left:95px;
+	top:265px;
 }
 
 #cardSlots #aProvinces {
 	position:absolute;
-	left:10px;
-	top:100px;
+	left:80px;
+	top:40px;
 }
 
 #cardSlots #aExpenses {
 	position:absolute;
-	left:450px;
-	top:275px;
+	left:550px;
+	top:273px;
 }
 
 #cardSlots #aSalaries {
 	position:absolute;
-	left:190px;
+	left:250px;
 	top:380px;
 }
 
@@ -213,9 +223,9 @@ margin-top:0px;*/
 
 #content #PrizesInfo {
 	position:absolute;
-	left:680px;
-	top:140px;
-	width:175px;
+	left:600px;
+	top:150px;
+	width:160px;
 	height:150px;
 	/*border:1px solid black;*/
 	text-align:left;
@@ -224,8 +234,8 @@ margin-top:0px;*/
 
 #content #TaxesInfo {
 	position:absolute;
-	left:540px;
-	top:440px;
+	left:550px;
+	top:450px;
 	width:200px;
 	height:50px;
 	/*border:1px solid black;*/
@@ -235,8 +245,8 @@ margin-top:0px;*/
 
 #content #RetailersInfo {
 	position:absolute;
-	left:135px;
-	top:345px;
+	left:45px;
+	top:375px;
 	width:220px;
 	height:50px;
 	/*border:1px solid black;*/
@@ -246,9 +256,9 @@ margin-top:0px;*/
 
 #content #ProvincesInfo {
 	position:absolute;
-	left:135px;
-	top:170px;
-	width:195px;
+	left:20px;
+	top:150px;
+	width:185px;
 	height:100px;
 	/*border:1px solid black;*/
 	text-align:left;
@@ -257,8 +267,8 @@ margin-top:0px;*/
 
 #content #ExpensesInfo {
 	position:absolute;
-	left:660px;
-	top:345px;
+	left:585px;
+	top:383px;
 	width:200px;
 	height:50px;
 	/*border:1px solid black;*/
@@ -268,9 +278,9 @@ margin-top:0px;*/
 
 #content #SalariesInfo {
 	position:absolute;
-	left:350px;
+	left:105px;
 	top:443px;
-	width:150px;
+	width:165px;
 	height:50px;
 	/*border:1px solid black;*/
 	text-align:left;
@@ -291,10 +301,6 @@ margin-top:0px;*/
 /* "You did it!" message */
 #successMessage {
   position: absolute;
-  left: 580px;
-  top: 250px;
-  width: 0;
-  height: 0;
   z-index: 100;
   color:#FFF;
   background: #0099cc;

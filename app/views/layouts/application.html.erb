@@ -23,8 +23,7 @@ function init() {
   // Hide the success message
   $('#successMessage').hide();
   $('#successMessage').css( {
-    left: '580px',
-    top: '250px',
+	//initial size.
     width: 0,
     height: 0
   } );
@@ -123,7 +122,7 @@ function handleCardDrop( event, ui ) {
   if ( correctCards == 6 ) {
     $('#successMessage').show();
     $('#successMessage').animate( {
-      left: '350px',
+      left: '250px',
       top: '100px',
       width: '275px',
       height: '150px',
